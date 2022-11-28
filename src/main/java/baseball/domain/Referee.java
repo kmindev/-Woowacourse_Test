@@ -12,15 +12,15 @@ public class Referee {
         int correctCount = judgment.correctCount(computer, player);
 
         int strike = 0;
-        for(int placeIndex=0; placeIndex<player.size(); placeIndex++) {
-            if(judgment.hasPlace(computer, placeIndex, player.get(placeIndex))) {
+        for (int placeIndex = 0; placeIndex < player.size(); placeIndex++) {
+            if (judgment.hasPlace(computer, placeIndex, player.get(placeIndex))) {
                 strike++;
             }
         }
 
         int ball = correctCount - strike;
 
-        if(correctCount == 0)
+        if (correctCount == 0)
             return "낫싱";
 
         return ball + " 볼 " + strike + " 스트라이크";

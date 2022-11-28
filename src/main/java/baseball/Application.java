@@ -30,7 +30,7 @@ public class Application {
         String input = sc.next();
 
         List<Integer> numbers = new ArrayList<>();
-        for(String number : input.split("")) {
+        for (String number : input.split("")) {
             numbers.add(Integer.valueOf(number));
         }
         return numbers;
